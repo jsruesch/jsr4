@@ -1,0 +1,157 @@
+/*------------------------------------------------------------------
+
+    Responsive Styles
+    
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+
+    Mixins
+
+-------------------------------------------------------------------*/
+/* End Mixins */
+/*-----------------  Desktops  -----------------*/
+@media screen and (max-width: 1050px) {
+  .wrap {
+    width: 100%;
+    padding-left: 40px !important;
+    padding-right: 40px !important; }
+
+  .mix .beebee_title p {
+    font-size: 15px; } }
+@media screen and (max-width: 650px) {
+  .content {
+    padding: 20px 0; }
+
+  .one_third,
+  .one_fourth,
+  .two_thirds,
+  .half,
+  .three_fourths,
+  .project_image_full,
+  .center {
+    width: 100%;
+    float: left; }
+
+  .project_title {
+    width: 100%;
+    float: left; }
+    .project_title .project_header {
+      font-size: 30px !important;
+      text-align: center; }
+
+  .project_categories {
+    width: 100%;
+    float: left; }
+    .project_categories p {
+      text-align: center;
+      line-height: 20px !important; }
+
+  .mix {
+    width: 33%;
+    margin-bottom: 1px; }
+
+  .mix .beebee_title {
+    display: none; }
+
+  .welcome {
+    padding: 45px 0 75px 0 !important; }
+    .welcome .welcome_text {
+      font-size: 19px; }
+
+  .navigation_container .wrap {
+    padding: 10px 10px 10px 10px !important; }
+  .navigation_container .navigation {
+    padding: 10px; }
+    .navigation_container .navigation img {
+      height: 55px; }
+    .navigation_container .navigation .nav {
+      padding-top: 15px; }
+      .navigation_container .navigation .nav a {
+        padding: 5px 5px;
+        font-size: 18px; }
+
+  .portrait {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    width: auto;
+    height: 250px; }
+
+  .footer {
+    padding: 30px; }
+
+  .sorting_buttons button {
+    width: 50%;
+    float: left;
+    padding: 10px 0 10px 0;
+    text-align: center; } }
+/* End Desktops */
+/*-----------------  Smartphones  -----------------*/
+@media (max-device-width: 650px) {
+  .one_third,
+  .one_fourth,
+  .two_thirds,
+  .half,
+  .three_fourths,
+  .project_image_full,
+  .center {
+    width: 100%;
+    float: left; }
+
+  .project_title {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    text-align: center; }
+
+  .project_header {
+    width: 100%;
+    float: left;
+    text-align: center; }
+
+  .content {
+    padding: 20px 0; }
+
+  .mix {
+    width: 50%;
+    margin-bottom: 1px;
+    margin-left: 0px; }
+
+  .mix .beebee_title {
+    display: none; }
+
+  .welcome {
+    padding: 45px 0 75px 0 !important; }
+    .welcome .welcome_text {
+      font-size: 19px; }
+
+  .navigation_container .wrap {
+    padding: 10px 10px 10px 10px !important; }
+  .navigation_container .navigation {
+    padding: 10px; }
+    .navigation_container .navigation img {
+      height: 50px; }
+    .navigation_container .navigation .nav {
+      padding-top: 15px; }
+      .navigation_container .navigation .nav a {
+        padding: 5px 5px;
+        font-size: 18px; }
+
+  .portrait {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    width: auto;
+    height: 250px; }
+
+  .footer {
+    padding: 30px; }
+
+  .sorting_buttons button {
+    width: 50%;
+    float: left;
+    padding: 10px 0 10px 0;
+    text-align: center; } }
+/* End Smartphones */
+
+/*# sourceMappingURL=responsive_styles.css.map */

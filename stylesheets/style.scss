@@ -1,0 +1,474 @@
+
+/*------------------------------------------------------------------
+
+STYLESHEET CONTENTS
+
+    -- GLOBAL STYLES
+    -- MISC CLASSES
+    -- ACTIVE PAGE
+    -- CONTAINERS
+    -- NAVIGATION
+    -- ELEMENTS
+    -- FOOTER
+    
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+
+    Global Styles
+
+-------------------------------------------------------------------*/
+
+
+@import 'mixins';
+
+* {
+    margin:0; padding:0;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    }
+    
+    
+button:focus{
+    outline:none !important;
+}
+
+html{ overflow:scroll; background:url(../images/bg.png) #0d1117 50% 0% no-repeat; height:100%;}
+
+body{ height:100%; }
+
+a{
+    color:white;
+    text-decoration:none;
+     &:hover{
+        border-bottom:2px solid $teal;
+        border-top:2px solid $teal;
+    }
+    
+    &:active{
+        background:rgba(255,255,255,.05);
+        border-top:2px solid white;
+        border-bottom:2px solid white;
+    }
+
+}
+
+
+p{
+    font-family:open sans;
+    color:$lblue;
+}
+
+ul{ list-style:none; }
+
+hr{  }
+
+h1{  }
+h2{  }
+h3{  }
+h4{  }
+h5{  }
+
+::selection{ background:#0d4460; color:white; }
+
+/* End Global Styles */
+
+
+@font-face {
+    font-family: geomanistblack;
+    src: url(../font/geomanist-black-webfont.ttf);
+}
+
+@font-face {
+    font-family: geomanistmedium;
+    src: url(../font/geomanist-medium-webfont.ttf);
+}
+
+@font-face {
+    font-family: geomanistlight;
+    src: url(../font/geomanist-light-webfont.ttf);
+}
+
+
+/*------------------------------------------------------------------
+
+    Misc Classes
+
+-------------------------------------------------------------------*/
+
+.clear{ clear: both; }
+
+.left{ float:left; }
+.right{ float:right; }
+
+.bold{ font-weight:bold;}
+.italic{ font-style: italic; }
+.underline{ text-decoration:underline; }
+
+.center_text{ text-align:center; }
+.caps{ text-transform:uppercase; }
+.lower_case{ text-transform:lowercase; }
+
+
+.tteal{ color:$teal; }
+.tlblue{ color:$lblue; }
+.twhite{ color:white;}
+
+/* End Misc Classes */
+
+
+
+/*------------------------------------------------------------------
+
+    Active Page
+
+-------------------------------------------------------------------*/
+
+    /*
+      body#ID_NAME_HERE .Navigation_Name li.List_Item_Class_Here{ Style for active Nav button }
+    */
+
+/* End Active Page */
+
+
+
+/*------------------------------------------------------------------
+
+    Containers
+
+-------------------------------------------------------------------*/
+
+.one_fourth{ width:25%; }
+.one_third{ width:33.3%; }
+.half{ width:50%;}
+.two_thirds{ width:66.66%; }
+.three_fourths{ width: 75%; }
+.full{ @include full; }
+
+.container{  }
+.content{ @include full; padding:20px 10px; }
+.center{ @include center; }
+.pright{ padding-right:20px;}
+
+.wrap{ width:1000px; }
+
+.mc{
+    @include full;
+    background:$dblue;
+    padding-bottom:30px;
+}
+
+.bb{ border:1px solid #06080B;}
+
+/* End Containers */
+
+
+
+/*------------------------------------------------------------------
+
+    Navigation
+
+-------------------------------------------------------------------*/
+
+.navigation_container{
+    
+    @include full;
+
+    .navigation{
+
+        @include full;
+        
+        padding:30px 0 30px 0;
+        
+        .nav{
+            float:right;
+            
+            padding-top:25px;
+
+            a{
+                overflow:hidden;
+                padding:10px 15px;
+                
+                font-family:geomanistlight;
+                text-transform:uppercase;
+                color:$lblue;
+                font-size:23px;
+                letter-spacing:1px;
+                
+                &:hover{
+                    
+                    
+                    color:white;
+                    
+                    border-top:5px solid $teal;
+                    border-bottom:5px solid $teal;
+                }
+                
+                &:active{
+                    background:rgba(255,255,255,.05);
+                    border-top:5px solid white;
+                    border-bottom:5px solid white;
+                }
+                
+                li{
+                    display:inline;
+                }
+            }
+        }
+        
+        img{
+            float:left;
+        }
+    }
+}
+
+
+/* End Navigation */
+
+
+
+/*------------------------------------------------------------------
+
+    Elements
+
+-------------------------------------------------------------------*/
+  
+.header{
+    color:$teal;
+    font-family:geomanistblack;
+    letter-spacing:1px;
+}
+
+.welcome{
+    @include full;
+    
+    padding:75px 0 200px 0;
+    text-align:center;
+    
+    .header{
+        font-size:50px;
+    }
+    
+    .welcome_text{
+        font-size:22px;
+    }
+}
+
+#Container .mix{
+	display: none;
+}
+
+#Container{ @include full; margin-bottom:30px; }
+
+.sorting_buttons{
+    @include full;
+    
+    margin:30px 0;
+    text-align:center;
+    
+    button{
+        background:none;
+        border:none;
+        padding:0 15px;
+        
+        font-family:geomanistblack;
+        text-transform:uppercase;
+        color:$teal;
+        font-size:18px;
+        letter-spacing:1px;
+        
+        &:hover{
+            cursor:pointer;
+            color:white;
+        }
+        
+        
+    }
+}
+
+.mix{
+    width:24.5%;
+    margin-left:1px;
+    margin-bottom:1px;
+    float:left;
+    
+    &:hover{
+        background:rgba(45,205,196,.25);
+        
+        img{
+            opacity:.5;
+        }
+        
+    }
+    
+    img{
+        @include full;
+    }
+    
+    .beebee_title{
+        display:none;
+        @include full;
+        
+        padding:10px 5px;
+        
+        p{
+            color:white;
+            font-family:geomanistblack;
+            color:white;
+            letter-spacing:2px;
+            text-transform:uppercase;
+            font-size:17px;
+            text-align:center;
+        }
+    }
+}
+
+.project_title_container{
+    @include full;
+    position:relative;
+    
+    padding:30px 0 10px 0;
+    
+    .project_title{
+        float:left;
+        
+        .project_header{
+            font-family:geomanistblack;
+            color:$teal;
+            font-size:40px;
+            letter-spacing:1px;
+        }
+        
+        .project_subhead{
+            font-family:geomanistlight;
+            color:white;
+            text-transform:uppercase;
+            font-size:18px;
+            letter-spacing:2px;
+        }
+        
+    }
+    
+   
+    .project_categories{
+        float:right;
+        
+        p{
+            font-family:geomanistmedium;
+            color:$lblue;
+            text-transform:uppercase;
+            font-size:15px;
+            letter-spacing:2px;
+            line-height:55px;
+        }
+    }
+}
+
+.project_image_full{
+    @include full;
+}
+
+.at_a_glance{
+    @include full;
+    
+    margin:20px 0 0 0;
+    
+    .header{
+        font-family: geomanistblack;
+        text-transform: uppercase;
+        color: #2dcdc4;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    
+    p{ font-size:13px;}
+    
+    .pl{
+        @include full;
+        height:15px;
+        background:black;
+        margin:5px 0 15px 0;
+        
+        .pl_bar{
+            height:15px;
+            float:left;
+            background:$teal;
+            
+            .vegeta{
+                @include full;
+                height:25px;
+                text-align:center;
+                color:black;
+                font-family:open sans;
+                font-weight:700;
+                font-size:10px;
+                
+                opacity:0;
+            }
+            
+            &:hover{
+                .vegeta{
+                    opacity:1;
+                }
+            }
+        }
+    }
+    
+    .eighty{ width:80%; }
+    .seventy{ width:70%; }
+    .sixty{ width:60%; }
+    .fifty{ width:50%; }
+}
+
+.portrait{
+    @include full;
+}
+
+#wuf-adv{ display:none !important; }
+
+
+/* End Elements */
+
+
+
+/*------------------------------------------------------------------
+
+    Footer
+
+-------------------------------------------------------------------*/
+.footer{
+    @include full;
+    
+    padding:30px 0;
+    
+    p{
+        font-family:geomanistlight;
+        color:$lblue;
+        letter-spacing:1px;
+        line-height:30px;
+        text-align:center;
+        font-size:14px;
+    }
+}
+
+/* End Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

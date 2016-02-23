@@ -1,0 +1,386 @@
+/*------------------------------------------------------------------
+
+STYLESHEET CONTENTS
+
+    -- GLOBAL STYLES
+    -- MISC CLASSES
+    -- ACTIVE PAGE
+    -- CONTAINERS
+    -- NAVIGATION
+    -- ELEMENTS
+    -- FOOTER
+    
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+
+    Global Styles
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+
+    Mixins
+
+-------------------------------------------------------------------*/
+/* End Mixins */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+button:focus {
+  outline: none !important; }
+
+html {
+  overflow: scroll;
+  background: url(../images/bg.png) #0d1117 50% 0% no-repeat;
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+a {
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    border-bottom: 2px solid #2dcdc4;
+    border-top: 2px solid #2dcdc4; }
+  a:active {
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white; }
+
+p {
+  font-family: open sans;
+  color: #8997ad; }
+
+ul {
+  list-style: none; }
+
+::selection {
+  background: #0d4460;
+  color: white; }
+
+/* End Global Styles */
+@font-face {
+  font-family: geomanistblack;
+  src: url(../font/geomanist-black-webfont.ttf); }
+@font-face {
+  font-family: geomanistmedium;
+  src: url(../font/geomanist-medium-webfont.ttf); }
+@font-face {
+  font-family: geomanistlight;
+  src: url(../font/geomanist-light-webfont.ttf); }
+/*------------------------------------------------------------------
+
+    Misc Classes
+
+-------------------------------------------------------------------*/
+.clear {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.underline {
+  text-decoration: underline; }
+
+.center_text {
+  text-align: center; }
+
+.caps {
+  text-transform: uppercase; }
+
+.lower_case {
+  text-transform: lowercase; }
+
+.tteal {
+  color: #2dcdc4; }
+
+.tlblue {
+  color: #8997ad; }
+
+.twhite {
+  color: white; }
+
+/* End Misc Classes */
+/*------------------------------------------------------------------
+
+    Active Page
+
+-------------------------------------------------------------------*/
+/*
+  body#ID_NAME_HERE .Navigation_Name li.List_Item_Class_Here{ Style for active Nav button }
+*/
+/* End Active Page */
+/*------------------------------------------------------------------
+
+    Containers
+
+-------------------------------------------------------------------*/
+.one_fourth {
+  width: 25%; }
+
+.one_third {
+  width: 33.3%; }
+
+.half {
+  width: 50%; }
+
+.two_thirds {
+  width: 66.66%; }
+
+.three_fourths {
+  width: 75%; }
+
+.full {
+  width: 100%;
+  float: left; }
+
+.content {
+  width: 100%;
+  float: left;
+  padding: 20px 10px; }
+
+.center {
+  margin: 0 auto;
+  display: block; }
+
+.pright {
+  padding-right: 20px; }
+
+.wrap {
+  width: 1000px; }
+
+.mc {
+  width: 100%;
+  float: left;
+  background: #06080b;
+  padding-bottom: 30px; }
+
+.bb {
+  border: 1px solid #06080B; }
+
+/* End Containers */
+/*------------------------------------------------------------------
+
+    Navigation
+
+-------------------------------------------------------------------*/
+.navigation_container {
+  width: 100%;
+  float: left; }
+  .navigation_container .navigation {
+    width: 100%;
+    float: left;
+    padding: 30px 0 30px 0; }
+    .navigation_container .navigation .nav {
+      float: right;
+      padding-top: 25px; }
+      .navigation_container .navigation .nav a {
+        overflow: hidden;
+        padding: 10px 15px;
+        font-family: geomanistlight;
+        text-transform: uppercase;
+        color: #8997ad;
+        font-size: 23px;
+        letter-spacing: 1px; }
+        .navigation_container .navigation .nav a:hover {
+          color: white;
+          border-top: 5px solid #2dcdc4;
+          border-bottom: 5px solid #2dcdc4; }
+        .navigation_container .navigation .nav a:active {
+          background: rgba(255, 255, 255, 0.05);
+          border-top: 5px solid white;
+          border-bottom: 5px solid white; }
+        .navigation_container .navigation .nav a li {
+          display: inline; }
+    .navigation_container .navigation img {
+      float: left; }
+
+/* End Navigation */
+/*------------------------------------------------------------------
+
+    Elements
+
+-------------------------------------------------------------------*/
+.header {
+  color: #2dcdc4;
+  font-family: geomanistblack;
+  letter-spacing: 1px; }
+
+.welcome {
+  width: 100%;
+  float: left;
+  padding: 75px 0 200px 0;
+  text-align: center; }
+  .welcome .header {
+    font-size: 50px; }
+  .welcome .welcome_text {
+    font-size: 22px; }
+
+#Container .mix {
+  display: none; }
+
+#Container {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px; }
+
+.sorting_buttons {
+  width: 100%;
+  float: left;
+  margin: 30px 0;
+  text-align: center; }
+  .sorting_buttons button {
+    background: none;
+    border: none;
+    padding: 0 15px;
+    font-family: geomanistblack;
+    text-transform: uppercase;
+    color: #2dcdc4;
+    font-size: 18px;
+    letter-spacing: 1px; }
+    .sorting_buttons button:hover {
+      cursor: pointer;
+      color: white; }
+
+.mix {
+  width: 24.5%;
+  margin-left: 1px;
+  margin-bottom: 1px;
+  float: left; }
+  .mix:hover {
+    background: rgba(45, 205, 196, 0.25); }
+    .mix:hover img {
+      opacity: .5; }
+  .mix img {
+    width: 100%;
+    float: left; }
+  .mix .beebee_title {
+    display: none;
+    width: 100%;
+    float: left;
+    padding: 10px 5px; }
+    .mix .beebee_title p {
+      color: white;
+      font-family: geomanistblack;
+      color: white;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 17px;
+      text-align: center; }
+
+.project_title_container {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 30px 0 10px 0; }
+  .project_title_container .project_title {
+    float: left; }
+    .project_title_container .project_title .project_header {
+      font-family: geomanistblack;
+      color: #2dcdc4;
+      font-size: 40px;
+      letter-spacing: 1px; }
+    .project_title_container .project_title .project_subhead {
+      font-family: geomanistlight;
+      color: white;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 2px; }
+  .project_title_container .project_categories {
+    float: right; }
+    .project_title_container .project_categories p {
+      font-family: geomanistmedium;
+      color: #8997ad;
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 2px;
+      line-height: 55px; }
+
+.project_image_full {
+  width: 100%;
+  float: left; }
+
+.at_a_glance {
+  width: 100%;
+  float: left;
+  margin: 20px 0 0 0; }
+  .at_a_glance .header {
+    font-family: geomanistblack;
+    text-transform: uppercase;
+    color: #2dcdc4;
+    font-size: 18px;
+    letter-spacing: 1px; }
+  .at_a_glance p {
+    font-size: 13px; }
+  .at_a_glance .pl {
+    width: 100%;
+    float: left;
+    height: 15px;
+    background: black;
+    margin: 5px 0 15px 0; }
+    .at_a_glance .pl .pl_bar {
+      height: 15px;
+      float: left;
+      background: #2dcdc4; }
+      .at_a_glance .pl .pl_bar .vegeta {
+        width: 100%;
+        float: left;
+        height: 25px;
+        text-align: center;
+        color: black;
+        font-family: open sans;
+        font-weight: 700;
+        font-size: 10px;
+        opacity: 0; }
+      .at_a_glance .pl .pl_bar:hover .vegeta {
+        opacity: 1; }
+  .at_a_glance .eighty {
+    width: 80%; }
+  .at_a_glance .seventy {
+    width: 70%; }
+  .at_a_glance .sixty {
+    width: 60%; }
+  .at_a_glance .fifty {
+    width: 50%; }
+
+.portrait {
+  width: 100%;
+  float: left; }
+
+#wuf-adv {
+  display: none !important; }
+
+/* End Elements */
+/*------------------------------------------------------------------
+
+    Footer
+
+-------------------------------------------------------------------*/
+.footer {
+  width: 100%;
+  float: left;
+  padding: 30px 0; }
+  .footer p {
+    font-family: geomanistlight;
+    color: #8997ad;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px; }
+
+/* End Footer */
+
+/*# sourceMappingURL=style.css.map */

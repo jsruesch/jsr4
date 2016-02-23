@@ -1,0 +1,206 @@
+/*------------------------------------------------------------------
+
+    Responsive Styles
+    
+-------------------------------------------------------------------*/
+
+@import 'mixins';
+
+/*-----------------  Desktops  -----------------*/
+@media screen and (max-width:1050px){
+    .wrap{
+        width:100%;
+        padding-left:40px !important;
+        padding-right:40px !important;
+    }
+    
+    
+    .mix .beebee_title p{ font-size:15px; }
+}
+@media (min-width: 635px) and (max-width:770px){  }
+@media (min-device-width: 519px) and (max-devide-width:770px){  }
+
+@media screen and (max-width:650px){
+    
+    .content{
+        padding:20px 0;
+    }
+    
+    .one_third,
+    .one_fourth,
+    .two_thirds,
+    .half,
+    .three_fourths,
+    .project_image_full,
+    .center{
+        @include full;
+    }
+    
+    .project_title{
+        @include full;
+        
+        .project_header{
+            font-size:30px !important;
+            text-align:center;
+        }
+ 
+    }
+    
+    .project_categories{
+        @include full;
+        p{
+            text-align:center;
+            line-height:20px !important;
+        }
+        
+    }
+    
+    .mix{ width:33%; margin-bottom:1px; }
+    .mix .beebee_title{ display:none;}
+    
+    .welcome{
+        padding:45px 0 75px 0 !important;
+        
+        .welcome_text{
+            font-size:19px;
+        }
+    }
+    
+    .navigation_container{
+        .wrap{
+            padding:10px 10px 10px 10px !important;
+        }
+        
+        .navigation{
+            padding:10px;
+            
+            img{
+                height:55px;
+            }
+            
+            .nav{
+                padding-top:15px;
+                
+                a{
+                    padding:5px 5px;
+                    font-size:18px;
+                }
+            }
+        }
+    }
+    
+    .portrait{
+        @include center;
+        float:none;
+        width:auto;
+        
+        height:250px;
+    }
+    
+    .footer{
+        padding:30px;
+    }
+    
+    .sorting_buttons{
+        button{
+            width:50%;
+            float:left;
+            padding:10px 0 10px 0;
+            text-align:center;
+        }
+    }
+    
+}
+/* End Desktops */
+
+/*-----------------  Smartphones  -----------------*/
+@media (max-device-width: 650px) {
+    .one_third,
+    .one_fourth,
+    .two_thirds,
+    .half,
+    .three_fourths,
+    .project_image_full,
+    .center{
+        @include full;
+    }
+    
+    .project_title{
+        @include full;
+        
+        font-size:30px;
+        text-align:center;
+    }
+    
+    .project_header{
+        @include full;
+        text-align:center;
+    }
+    
+    .content{
+        padding:20px 0;
+    }
+    
+    .mix{ width:50%; margin-bottom:1px; margin-left:0px; }
+    .mix .beebee_title{ display:none;}
+    
+    .welcome{
+        padding:45px 0 75px 0 !important;
+        
+        .welcome_text{
+            font-size:19px;
+        }
+    }
+    
+    .navigation_container{
+        .wrap{
+            padding:10px 10px 10px 10px !important;
+        }
+        
+        .navigation{
+            padding:10px;
+            
+            img{
+                height:50px;
+            }
+            
+            .nav{
+                padding-top:15px;
+                
+                a{
+                    padding:5px 5px;
+                    font-size:18px;
+                }
+            }
+        }
+    }
+    
+    .portrait{
+        @include center;
+        float:none;
+        width:auto;
+        
+        height:250px;
+    }
+    
+    .footer{
+        padding:30px;
+    }
+    
+    .sorting_buttons{
+        button{
+            width:50%;
+            float:left;
+            padding:10px 0 10px 0;
+            text-align:center;
+        }
+    }
+
+}
+/* End Smartphones */
+
+
+
+
+
+
