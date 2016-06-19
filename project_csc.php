@@ -91,6 +91,19 @@
             <div class="one_third left">
                 <img class="full" src="images/project_images/csc/csc_dragons.png"/>
             </div>
+            
+            <div class="one_third left">
+                <img class="full" src="images/project_images/csc/csc_resistance.png"/>
+            </div>
+            
+            <div class="one_third left">
+                <img class="full" src="images/project_images/csc/csc_first_order.png"/>
+            </div>
+            
+            <div class="one_third left">
+                <img class="full" src="images/project_images/csc/csc_boba_tendies.png"/>
+            </div>
+            
         </div>
             
         <div class="content">    
