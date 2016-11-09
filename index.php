@@ -20,6 +20,7 @@
             <div class="sorting_buttons">
                     <button class="filter" data-filter="all">All</button>
                     <button class="filter" data-filter=".web">Web</button>
+                    <button class="filter" data-filter=".web">Seven</button>
                     <button class="filter" data-filter=".branding">Branding</button>
                     <button class="filter" data-filter=".composites">Composites</button>
                     <button class="filter" data-filter=".vector">Vector</button>
