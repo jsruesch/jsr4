@@ -2,7 +2,7 @@
 
 
 <div class="footer">
-  <p>There will be People that will say you can't make a living out of something you love to do.<br />
+  <p>There will be people that will say you can't make a living out of something you love to do.<br />
   But are you really living by not doing it? - <i>Olan Rogers</i></p>
 </div>
 
