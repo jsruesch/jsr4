@@ -1,38 +1,29 @@
+@import 'mixins';
+
 /* Small Screens */
 @media screen and (max-width:768px){
+  body{
+    padding-top: 0;
+  }
   .container{
-    padding: 20px !important;
+    padding: 30px !important;
+    margin: 20px !important;
   }
   h1{
-    font-size: 20px !important;
+    font-size: 30px !important;
   }
 }
 
 /* Devices */
-/* Small devices */
-@media (min-width: 768px) {
-  .container{ width: 100% !important; } /* BS Override */
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .container{ width: 100% !important; } /* BS Override */
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 1025px) {
-  .container{ width: 100% !important; } /* BS Override */
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1170px) {
-  .container{ width: 75% !important; } /* BS Override */
-}
 @media (max-device-width:768px){
+  body{
+    padding-top: 0;
+  }
   .container{
-    padding: 20px !important;
+    padding: 30px !important;
+    margin: 20px !important;
   }
   h1{
-    font-size: 20px !important;
+    font-size: 30px !important;
   }
 }
