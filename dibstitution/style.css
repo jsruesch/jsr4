@@ -338,6 +338,35 @@ h1, h2, h3, h4, h5, p {
 @media (max-width: 768px) {
   .pad60 {
     padding: 35px !important; } }
+/* Small Screens */
+@media screen and (max-width: 768px) {
+  p, li {
+    font-size: 25px; } }
+/* Devices */
+/* Small devices */
+@media (min-width: 768px) {
+  .container {
+    width: 100% !important; }
+
+  /* BS Override */ }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 100% !important; }
+
+  /* BS Override */ }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 1025px) {
+  .container {
+    width: 100% !important; }
+
+  /* BS Override */ }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1170px) {
+  .container {
+    width: 75% !important; }
+
+  /* BS Override */ }
 /* END: Imports */
 /**
  * =========================================
