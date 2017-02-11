@@ -1,0 +1,64 @@
+
+/* IMPORTS */
+@import 'mixins';
+@import 'responsive_styles';
+/* END: Imports */
+
+/**
+ * =========================================
+ * Global Styles
+ * =========================================
+ */
+
+ * {
+     margin:0; padding:0;
+
+     -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+ }
+
+ html{
+   height: 100%;
+   width: 100%;
+ }
+
+ body{
+   position: relative;
+   z-index: 10;
+   height:100%;
+   width:100%;
+   padding-top: 40px;
+   background: none !important;
+ }
+
+h1,h2,h3,h4,h5{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+h1{
+  font-size: 50px !important;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+p, li{
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 25px !important;
+}
+
+.background{
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  background: url(../img/bg.png);
+  background-size: cover;
+}
+
+ /* END: Global Styles */
