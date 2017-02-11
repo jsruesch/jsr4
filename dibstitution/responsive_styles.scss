@@ -1,5 +1,11 @@
 /* Small Screens */
 @media screen and (max-width:768px){
+  h1{
+    font-size: 20px;
+    .container{
+      padding: 20px;
+    }
+  }
 }
 
 /* Devices */
@@ -23,5 +29,10 @@
   .container{ width: 75% !important; } /* BS Override */
 }
 @media (max-device-width:768px){
-
+  h1{
+    font-size: 20px;
+    .container{
+      padding: 20px;
+    }
+  }
 }

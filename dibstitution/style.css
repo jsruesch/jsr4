@@ -339,6 +339,11 @@ h1, h2, h3, h4, h5, p {
   .pad60 {
     padding: 35px !important; } }
 /* Small Screens */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px; }
+    h1 .container {
+      padding: 20px; } }
 /* Devices */
 /* Small devices */
 @media (min-width: 768px) {
@@ -364,6 +369,11 @@ h1, h2, h3, h4, h5, p {
     width: 75% !important; }
 
   /* BS Override */ }
+@media (max-device-width: 768px) {
+  h1 {
+    font-size: 20px; }
+    h1 .container {
+      padding: 20px; } }
 /* END: Imports */
 /**
  * =========================================
