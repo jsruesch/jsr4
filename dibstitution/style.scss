@@ -19,7 +19,7 @@
  }
 
  html{
-   background: #eee;
+   background: url(img/bg.png) 50% 0% #eee no-repeat;
  }
 
  body{
@@ -30,6 +30,8 @@
    padding-top: 40px;
    background: none !important;
  }
+
+ul{ list-style: none; }
 
 .container{
   padding: 60px !important;
@@ -57,9 +59,8 @@ p, li{
   color: $grey;
 }
 
-ul, ol{ padding-left: 30px; }
 
-.disc{ list-style: disc; }
+.disc{ list-style: disc; padding-left: 30px;  }
 
 .thickdiv{
   width:100%;
@@ -68,4 +69,14 @@ ul, ol{ padding-left: 30px; }
 }
 
 .fa-star{ padding: 0 15px; }
+
+.dropdown{
+
+  button{
+    border: 0 !important;
+    padding:10px;
+    background: $blue;
+    color: $white;
+  }
+}
  /* END: Global Styles */

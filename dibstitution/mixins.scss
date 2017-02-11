@@ -30,6 +30,8 @@
  $grey:  #333;
  $red:   #af2225;
  $blue:  #005bc1;
+ $white: #fff;
+ $lgrey: #eee;
 
  /* END Variables */
 
@@ -43,10 +45,14 @@
  .text-grey{    color: $grey !important; }
  .text-red{     color: $red !important; }
  .text-blue{    color: $blue !important; }
+ .text-white{   color: $white !important; }
+ .text-lgrey{   color: $lgrey!important; }
 
  .bg-grey{    background: $grey; }
  .bg-red{     background: $red; }
  .bg-blue{    background: $blue; }
+ .bg-white{   background: $white; }
+ .bg-lgrey{   background: $lgrey; }
 
  /* Bootstrap Overrides */
  .container,
