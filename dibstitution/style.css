@@ -339,9 +339,6 @@ h1, h2, h3, h4, h5, p {
   .pad60 {
     padding: 35px !important; } }
 /* Small Screens */
-@media screen and (max-width: 768px) {
-  p, li {
-    font-size: 25px; } }
 /* Devices */
 /* Small devices */
 @media (min-width: 768px) {
