@@ -678,7 +678,7 @@ h1, h2, h3, h4, h5, p {
   .pad60 {
     padding: 35px !important; } }
 /* Small Screens */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   body {
     padding-top: 0; }
 
@@ -689,7 +689,7 @@ h1, h2, h3, h4, h5, p {
   h1 {
     font-size: 30px !important; } }
 /* Devices */
-@media (max-device-width: 850px) {
+@media (max-device-width: 768px) {
   body {
     padding-top: 0; }
 
