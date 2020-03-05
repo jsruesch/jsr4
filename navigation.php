@@ -19,9 +19,9 @@
                 <a href="index.php"><img src="images/nav_logo_large.png"/></a>
                 
                 <ul class="nav">
-                    <a href="index.php#work"><li>Work</li></a>
-                    <a href="about.php"><li>About</li></a>
-                    <a href="contact.php"><li>Contact</li></a>
+                    <a href="#0"><li>JSR Archive</li></a>
+                    <!-- <a href="about.php"><li>About</li></a>
+                    <a href="contact.php"><li>Contact</li></a> -->
                 </ul>
             
             </div>

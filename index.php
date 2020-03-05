@@ -2,13 +2,13 @@
 <?php include('navigation.php') ?>
 
 
-<div class="wrap center">
+<!-- <div class="wrap center">
     <div class="welcome">
         <p class="header large">Ahoy!</p>
         <p class="welcome_text">My name is Jake. I'm a design fanatic based in Madison, Wisconsin
         specializing in <span class="tteal">graphic, web, and user interface design</span>. I'm passionate, efficient, and meticulous.</p>
     </div>
-</div>
+</div> -->
 
 <div class="mc">
 
